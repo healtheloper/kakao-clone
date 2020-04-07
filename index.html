@@ -7,6 +7,7 @@
       src="https://kit.fontawesome.com/04832fad24.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
@@ -15,11 +16,19 @@
         <span class="status-bar__clock">13:54</span>
       </div>
       <div class="status-bar">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
+        <div class="status-bar__icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="status-bar__icon">
+          <i class="fas fa-volume-mute"></i>
+        </div>
+        <div class="status-bar__icon">
+          <i class="fas fa-wifi"></i>
+        </div>
         <span class="status-bar__battery">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <div class="status-bar__icon">
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
     </div>
     <header class="header">
@@ -57,8 +66,6 @@
         </li>
       </ul>
     </main>
-    /*test*/
-
     <nav class="nav">
       <ul clas="nav__list">
         <li class="nav__list-item">
