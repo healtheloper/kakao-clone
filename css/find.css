@@ -1,0 +1,26 @@
+.find__header-list {
+  display: flex;
+  justify-content: space-between;
+}
+.find__header-list .header__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 30px;
+  margin-left: 5px;
+  margin: 15px 25px;
+}
+
+.header__btn__title {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.find__title {
+  border-top: 1px solid #dfdddd;
+  padding-top: 15px;
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 13px;
+}

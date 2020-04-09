@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 .friend .friend__bottom,
 .friend .friend__status,
@@ -42,6 +43,7 @@
 }
 .friend .friend__column {
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 .friend .chat__timestamp {
@@ -49,4 +51,12 @@
 }
 .friend__column .friend__message {
   font-size: 35px;
+}
+.friend__column .friend__plus-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 223, 223);
+  border-radius: 10px;
+  padding: 10px;
 }
