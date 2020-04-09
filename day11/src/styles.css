@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: #e2e4e9;
+}
+.phone {
+  position: relative;
+  margin-top: 50px;
+  width: 350px;
+  height: 700px;
+  border-radius: 30px;
+  padding: 0px 30px;
+  background-image: linear-gradient(
+      rgba(1, 1, 1, 0.247),
+      rgb(243, 244, 247) 45%
+    ),
+    url("../images/greece.jpg");
+  background-repeat: no-repeat;
+  border: 10px solid rgb(77, 74, 74);
+  box-shadow: 5px 5px 3px 0px gray;
+}
+.status-bar,
+.place__inform-title,
+.tags,
+.overview__read-more,
+.places__img-box,
+.inform-stars span {
+  font-weight: 600;
+}
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.header {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 23px;
+}
+.places {
+  display: flex;
+  justify-content: flex-end;
+}
+.places .places__img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #4870fe;
+  border-radius: 12px;
+}
+.tags,
+.place__inform-locate,
+.overview {
+  margin: 12px 0px;
+}
+.tags .tags__tag {
+  background-color: #dee3f9;
+  padding: 5px 15px;
+  border-radius: 15px 15px 15px 0px;
+  color: #3866fe;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.place__inform .place__inform__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.place__inform .place__inform-title {
+  color: #010a37;
+  font-size: 35px;
+}
+.place__inform .place__inform-check {
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+  color: #ff1f36;
+}
+.place__inform-locate i,
+.overview__read-more {
+  color: #3866fe;
+}
+.place__inform-locate span,
+.place__inform-distance,
+.overview__title {
+  opacity: 0.3;
+}
+.place__inform-locate span {
+  margin-left: 5px;
+}
+.inform-stars {
+  display: flex;
+  color: rgb(255, 196, 0);
+}
+.inform-stars__half {
+  margin-left: 4px;
+}
+.inform-stars span {
+  margin-left: 10px;
+  color: black;
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+}
+.overview .overview__explan {
+  padding: 7px 0px;
+  opacity: 0.6;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 16%;
+  background-color: #c7c5c5;
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #dfdddd;
+  border-radius: 30px;
+}
+.nav__list {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0px 0px 30px 30px;
+}
+.nav__list1 {
+  display: flex;
+  margin-right: 30px;
+}
+.nav__list2 {
+  display: flex;
+  margin-left: 30px;
+}
+.nav__btn__earth {
+  padding: 38px 12px;
+  font-size: 25px;
+  margin: 5px;
+  border-top: 4px solid #3866fe;
+  color: #3866fe;
+}
+.nav__btn__users,
+.nav__btn__cog,
+.nav__btn__home {
+  padding: 38px 12px;
+  font-size: 25px;
+  margin: 9px;
+  opacity: 0.4;
+}
+.nav__half-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__half-circle1 {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  border: 10px solid rgb(233, 227, 227);
+  border-radius: 50%;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  transform: rotate(45deg);
+}
+.nav__btn-route {
+  position: absolute;
+  top: -30px;
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #3866fe;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+}
+.nav__iphone-bar {
+  position: absolute;
+  bottom: 5px;
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgb(224, 223, 223);
+}
