@@ -11,3 +11,8 @@
 .status-bar .status-bar__battery {
   margin-left: 3px;
 }
+.status-bar__icons {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+}
