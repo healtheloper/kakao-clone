@@ -6,6 +6,18 @@
   left: 0px;
   bottom: 0px;
   border-top: 1px solid #dfdddd;
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .nav .nav__list {
@@ -14,6 +26,10 @@
 }
 .nav i {
   font-size: 20px;
+  transition: transform 0.5s ease-out;
+}
+.nav i:hover {
+  transform: scale(1.1);
 }
 .nav .nav__list-link {
   position: relative;

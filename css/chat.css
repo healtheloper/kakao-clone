@@ -17,7 +17,7 @@
 }
 .chat-screen {
   background-image: linear-gradient(#c9d6ff, #e2e2e2);
-  min-height: 100000vh;
+  min-height: 100vh;
   animation: none;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .chat__write i {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .chat__write-column:nth-child(2) {
@@ -99,8 +99,20 @@
   width: 50px;
   border-radius: 20px;
   margin-right: 15px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 20px -12px rgba(50, 50, 93, 0.25),
+    0 18px 15px -1px rgba(0, 0, 0, 0.3), 0 -12px 15px -8px rgba(0, 0, 0, 0.025);
+  animation: wave 2s ease-in-out infinite;
+}
+@keyframes wave {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
 }
 .incoming-message .message-author {
   margin-bottom: 5px;
