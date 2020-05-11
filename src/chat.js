@@ -2,6 +2,7 @@ const form = document.querySelector(".chat__write-form");
 const chat_input = document.querySelector(".chat__write-input");
 const chat_messages = document.querySelector(".chat__messages");
 const chat_screen = document.querySelector(".chat-screen");
+const clock = document.querySelector(".status-bar__clock");
 
 let msgs = [];
 
@@ -32,6 +33,8 @@ function getTime() {
   const time_min =
     time.getMinutes() < 10 ? `0${time.getMinutes()}` : `${time.getMinutes()}`;
   const curTime = time_hour + ":" + time_min;
+  clock.innerText = curTime;
+
   return curTime;
 }
 function paintDay(dayObj) {
@@ -113,6 +116,9 @@ function handleSubmit(event) {
 
 function init() {
   form.addEventListener("submit", handleSubmit);
+
+  getTime();
+  setInterval(getTime, 1000);
 }
 
 init();
