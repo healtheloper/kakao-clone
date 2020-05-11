@@ -53,7 +53,12 @@
     </div>
     <main class="chat-screen">
       <ul class="chat__messages">
-        <span class="chat__timestamp">Friday, January, 11, 2019</span>
+        <span class="chat__timestamp">
+          <span class="chat__timestamp__day">Monday</span>
+          <span class="chat__timestamp__months">May</span>
+          <span class="chat__timestamp__date">10</span>
+          <span class="chat__timestamp__years">2020</span>
+        </span>
         <li class="incoming-message message">
           <img src="images/avatar.png" class="g-avatar message__avatar" />
           <div class="message-content">
@@ -88,11 +93,13 @@
           <i class="far fa-plus-square"></i>
         </div>
         <div class="chat__write-column">
-          <input
-            type="text"
-            placeholder="Send message"
-            class="chat__write-input"
-          />
+          <form class="chat__write-form">
+            <input
+              type="text"
+              placeholder="Send message"
+              class="chat__write-input"
+            />
+          </form>
         </div>
         <div class="chat__write-column">
           <span class="chat__write-icon">
@@ -107,5 +114,6 @@
     <div class="bigScreen">
       <span class="bigScreen__text">Please Make Your Screen Small 😭</span>
     </div>
+    <script src="src/chat.js"></script>
   </body>
 </html>
