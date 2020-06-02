@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import "reset.css";
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #bec3cf;
+}
+.sign-in {
+  width: 300px;
+  height: 550px;
+  background-color: #f8f8f8;
+  font-family: "PT Sans", sans-serif;
+  padding: 25px;
+  border-radius: 30px;
+  position: relative;
+}
+.sign-in .sign-in__input-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+.sign-in .sing-in__input {
+  margin-bottom: 30px;
+}
+.sign-in .sign-in__title {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  opacity: 0.9;
+  font-size: 18px;
+}
+input[id="sign-in__id"] {
+  border: 1px solid #d2d5e0;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+input[id="sign-in__password"] {
+  border: 1px solid #d2d5e0;
+  border-radius: 8px;
+  padding: 6px;
+  background-color: white;
+}
+
+input[id="remember-me"] + label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+  color: white;
+}
+.sign-in__remember-box .sign-in__forgot {
+  position: absolute;
+  right: 25px;
+  margin-bottom: 10px;
+  color: #e2283e;
+  font-size: 11px;
+}
+.sign-in__remember-box .sign-in__remember-check {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 25px;
+  top: 210px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  color: grey;
+  padding-right: 10px;
+}
+.sign-in .sign-in__columns {
+  margin-top: 80px;
+}
+.sign-in__sign-in-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 250px;
+  background-color: #e2283e;
+  border-radius: 18px;
+  font-size: 11px;
+  color: white;
+}
+.sign-in__column {
+  margin: 30px 0px;
+}
+.sign-in__or {
+  opacity: 0.9;
+  font-weight: 700;
+}
+.sign-in__sns {
+  display: flex;
+  justify-content: space-between;
+}
+.sign-in__sns__facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 36px;
+  border-radius: 20px;
+  color: white;
+  font-size: 11px;
+  background-color: #475a95;
+}
+.sign-in__sns__twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 36px;
+  font-size: 11px;
+  border-radius: 20px;
+  color: white;
+  background-color: #5da1f2;
+}
+.sign-in__bottom {
+  font-size: 11px;
+  padding: 3px;
+}
+.sign-in__question {
+  color: grey;
+}
+.sign-in__click {
+  color: #e2283e;
+}
+input[id="sign-in__remember-check"] + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13px;
+  height: 13px;
+  border: 2px solid #bcbcbc;
+  cursor: pointer;
+  color: white;
+  font-size: 5px;
+  margin-right: 4px;
+}
+input[id="sign-in__remember-check"] {
+  display: none;
+}
+input[id="sign-in__remember-check"]:checked + label {
+  color: #e2283e;
+}
